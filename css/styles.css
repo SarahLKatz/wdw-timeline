@@ -1,0 +1,153 @@
+body {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 960px;
+  margin: 0px auto;
+  font-family: Open Sans, sans-serif;
+  font-size: 62.5%;
+}
+
+.content {
+  background-color: #CCC;
+}
+
+.top-bottom {
+  background-color: #9933ff;
+}
+
+/*Header Styles - Small Screen*/
+header {
+  height: 10%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-left: 5px;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+/*Button Styles*/
+button {
+  height: 35px;
+  width: 30%;
+  padding: 1%;
+  margin: 1%;
+  font-size: .70rem;
+  line-height: .65rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.mk {
+  background-color: #00ccff;
+}
+
+.ep {
+  background-color: #666666;
+}
+
+.dhs {
+  background-color: #cc66cc
+}
+
+.dak {
+  background-color: #66cc33;
+}
+
+.resort {
+  background-color: #ffcc33;
+}
+
+.event {
+  background-color: #ff6699;
+}
+
+.selected {
+  border: solid 1px #20538D;
+}
+
+/*Timeline Styles*/
+/*INSERT LATER*/
+
+/*Footer Styles*/
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  flex: 1 0 100%;
+  font-size: 
+}
+
+footer span {
+  width: 50%;
+  height: 1px;
+  background-color: black;
+}
+
+/*Styles For Larger Screen*/
+@media only screen and (min-width: 480px) {
+  header {
+  height: 7.5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+  h1 {
+    flex: 1 0 100%;
+    font-size: 2rem;
+    line-height: .3rem;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  /*Button Styles:*/
+  button {
+    height: 50px;
+    width: 15%;
+    padding: 1%;
+    margin: 1%;
+    font-size: .90rem;
+    line-height: .90rem;
+    border-radius: 4px;
+    color: white;
+  }
+
+  /*Footer Styles*/
+
+  footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  h3 {
+    flex: 0 0 50%;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  footer span {
+    display: none;
+  }
+}

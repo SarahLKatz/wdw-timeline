@@ -2,45 +2,53 @@
 <html>
   <head>
     <title>WDW Timeline: 2000 - 2016</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
-    <header>
-      <h1>Walt Disney World Timeline:</h1>
-      <h2>2000 - 2016</h2>
-    </header>
+    <div class="content">
 
-    <nav>
-      <button id="mkButton">Magic Kingdom</button>
-      <button id="epButton">Epcot</button>
-      <button id="dhsButton">Disney's Hollywood Studios</button>
-      <button id="dakButton">Disney's Animal Kingdom</button>
-      <button id="resortButton">Resorts</button>
-      <button id="eventButton">Special Events</button>
-    </nav>
+      <header class="top-bottom">
+        <h1>Walt Disney World Timeline:</h1>
+        <h1>2000 - 2016</h1>
+      </header>
 
-    <div class="timeline">
-      <ul>
-        <li class="mk">Year: Magic Kingdom Item</li>
-        <li class="ep">Year: Epcot Item</li>
-        <li class="dhs">Year: Hollywood Studios Item</li>
-        <li class="dak">Year: Animal Kingdom Item</li>
-        <li class="resort">Year: Resort Item</li>
-        <li class="mk">Year: Magic Kingdom Item</li>
-        <li class="ep">Year: Epcot Item</li>
-        <li class="dhs">Year: Hollywood Studios Item</li>
-        <li class="dak">Year: Animal Kingdom Item</li>
-        <li class="event">Year: Special Events Item</li>
-      </ul>
+      <nav>
+        <button id="mkButton" class="mk selected">Magic Kingdom</button>
+        <button id="epButton" class="ep selected">Epcot</button>
+        <button id="dhsButton" class="dhs selected">Disney's Hollywood Studios</button>
+        <button id="dakButton" class="dak selected">Disney's Animal Kingdom</button>
+        <button id="resortButton" class="resort selected">Resorts</button>
+        <button id="eventButton" class="event selected">Special Events</button>
+      </nav>
+
+      <div class="timeline">
+        <ul>
+          <li class="mk">Year: Magic Kingdom Item</li>
+          <li class="ep">Year: Epcot Item</li>
+          <li class="dhs">Year: Hollywood Studios Item</li>
+          <li class="dak">Year: Animal Kingdom Item</li>
+          <li class="resort">Year: Resort Item</li>
+          <li class="mk">Year: Magic Kingdom Item</li>
+          <li class="ep">Year: Epcot Item</li>
+          <li class="dhs">Year: Hollywood Studios Item</li>
+          <li class="dak">Year: Animal Kingdom Item</li>
+          <li class="event">Year: Special Events Item</li>
+        </ul>
+      </div>
+
+      <footer class="top-bottom">
+        <h3 class="border-below">Reset Timeline</h3>
+        <span></span>
+        <h3>Return to Top</h3>
+      </footer>
+
     </div>
 
-    <footer>
-      <h3>Reset Timeline</h3>
-      <h3>Return to Top</h3>
-    </footer>
-
-    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
