@@ -7,12 +7,16 @@ body {
   font-size: 62.5%;
 }
 
+img {
+  max-width: 100%;
+}
+
 .content {
   background-color: #CCC;
 }
 
 .top-bottom {
-  background-color: #9933ff;
+  background-color: rgba(53, 51, 255, 0.35);
 }
 
 /*Header Styles - Small Screen*/
@@ -75,7 +79,77 @@ button {
 }
 
 /*Timeline Styles*/
-/*INSERT LATER*/
+/*Styles - Overall Timeline*/
+.timeline {
+  margin: 3%;
+  font-size: 1.2em;
+}
+
+time {
+  font-weight: bold;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+ 
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+/*Styles - Timeline Content*/
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/*Styles - Odd Numbered Items (Right)*/
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -32px;
+  top: 60%;
+  border-width: 2px 16px 2px 16px;
+  border-color: transparent #FFF transparent transparent;
+}
+
+/*Styles - Even Numbered Items (Left)*/
+.timeline ul li:nth-child(even) div {
+  left: -375px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -32px;
+  top: 60%;
+  border-width: 2px 16px 2px 16px;
+  border-color: transparent transparent transparent #FFF;
+}
 
 /*Footer Styles*/
 footer {
@@ -151,3 +225,4 @@ footer span {
     display: none;
   }
 }
+
