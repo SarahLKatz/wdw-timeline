@@ -4,21 +4,24 @@ $(function() {
   var pushed
 
   // 1 - On first click, hide all items
-  $("button").one("click", function() {
+  $("nav").one("click", function() {
     $("button").removeClass("selected")
     $("li").addClass("hide");
     console.log("it's all hidden!")
+    onPush();
   });
 
   // 2 - Display items for the chosen class
 
-  $("button").click(function() {
+  $("button").click(onPush);
+
+  function onPush() {
     var pushed = $(this).attr("id");
     $(this).toggleClass("selected")
     console.log("You pushed this button: " + pushed);
     determineClass(pushed);
     filterItems(classChosen);
-  });
+  };
 
   // 2A - Determining the Chosen Class
 
@@ -91,8 +94,7 @@ $(function() {
   // BOTTOM:
   // 1- "Reset Timeline"
   $("#reset").click(function() {
-    $("li").removeClass("hide");
-    realign();
+    location.reload();
   })
 
   // 2 - "Return to Top"
