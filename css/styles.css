@@ -228,6 +228,11 @@ p {
 }
 
 /*Footer Styles*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h3 {
   text-align: center;
   font-size: 1.5rem;
